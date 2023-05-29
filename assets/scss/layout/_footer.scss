@@ -1,0 +1,22 @@
+// copyrights
+/*copy - rights*/
+@use "../abstracts/index" as *;
+
+.copy_rights {
+  background: $third-color;
+  color: $primary-color;
+  &-text {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    .copy_rights-head {
+      width: 410px;
+      margin: 20px auto;
+    }
+
+    .copy_rights-para {
+      text-align: center;
+    }
+  }
+}

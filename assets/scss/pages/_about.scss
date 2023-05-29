@@ -1,0 +1,116 @@
+@use "../abstracts/index" as *;
+.about_page-bg {
+  background-color: $primary-color;
+  padding-bottom: 50px;
+
+  .about_page {
+    .about_page-text {
+      padding-top: 50px;
+
+      color: $primary-color;
+      &-head {
+        width: 110px;
+        margin: 0 auto;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+        padding-bottom: 10px;
+      }
+    }
+    .about-bg-details {
+      background-color: $third-color;
+
+      .about-details {
+        margin: 0 auto;
+        width: 1000px;
+        padding-bottom: 50px;
+
+        .about-details-text {
+          color: $primary-color;
+
+          &-head {
+            width: 195px;
+            margin: 0 auto;
+            padding: 30px 0;
+          }
+          &-para {
+            text-align: justify;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+    .about-form {
+      width: 1000px;
+      margin: 0px auto;
+
+      .about_form-text {
+        color: $secondary-color;
+        &-head {
+          width: 190px;
+          margin: 0 auto;
+          padding: 40px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+          margin-bottom: 20px;
+        }
+      }
+      .about_page-form {
+        display: flex;
+        justify-content: space-between;
+        color: $primary-color;
+
+        .form-image {
+          width: 500px;
+          height: 500px;
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        .form-bg {
+          background-color: $third-color;
+          margin-right: 10px;
+          margin-top: 60px;
+          border-radius: 10px;
+
+          form {
+            display: flex;
+            flex-direction: column;
+            padding: 50px 0;
+            align-items: center;
+            width: 480px;
+
+            input {
+              width: 400px;
+              border: none;
+              border-radius: 10px;
+              height: 30px;
+              padding: 10px;
+            }
+            textarea {
+              border: none;
+              border-radius: 10px;
+              padding: 10px;
+            }
+            #form_submit {
+              margin-top: 40px;
+              border-radius: 10px;
+              border: none;
+              input {
+                width: 100px;
+                height: 40px;
+                padding: 10px;
+                cursor: pointer;
+                transition: 0.3s ease;
+                &:hover {
+                  background-color: $third-color;
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

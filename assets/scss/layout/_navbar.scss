@@ -1,0 +1,78 @@
+@use "../abstracts/index" as *;
+.navbar-under {
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+  box-shadow: 1px 1px 5px 3px rgba($color: #000000, $alpha: 0.2);
+
+  .navbg {
+    background-color: $primary-color;
+  }
+  .navbar {
+    width: 1000px;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 30px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+    &-links {
+      width: 250px;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        list-style-type: none;
+
+        a {
+          font-weight: 700;
+          font-size: 14px;
+          text-decoration: none;
+          transition: 0.3s ease-in-out;
+          padding: 10px;
+          border-radius: 10px;
+          text-transform: uppercase;
+          position: relative;
+          color: $secondary-color;
+          // background-color: $third-color;
+
+          &:hover {
+            width: 80%;
+            color: $primary-color;
+            background-color: $third-color;
+          }
+        }
+      }
+    }
+    .search_icon {
+      color: $secondary-color;
+      padding: 10px;
+      margin-right: 10px;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      border-radius: 10px;
+
+      &:hover {
+        color: $primary-color;
+        background-color: $third-color;
+      }
+    }
+    .user_icon {
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      color: $secondary-color;
+      padding: 10px;
+      border-radius: 10px;
+
+      &:hover {
+        color: $primary-color;
+        background-color: $third-color;
+      }
+    }
+  }
+}

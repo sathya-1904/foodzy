@@ -1,0 +1,29 @@
+/*
+
+variables
+
+$primary-color:#fff;
+$secondary-color:#3b3b3b;
+$third-color:#009063;
+$fourth-color:e3e0f3;
+
+*/
+// global
+@use "./abstracts/index" as *;
+@use "./base/global-declarartion";
+
+// layout
+@use "./layout/media";
+@use "./layout/navbar";
+@use "./layout/header";
+@use "./layout/footer";
+
+// pages
+@use "./pages/about";
+@use "../scss/pages/dishes";
+
+// font awesome
+@use "../scss/fontawesome.scss";
+@use "./solid.scss";
+@use "./brands.scss";
+@use "./regular.scss";
